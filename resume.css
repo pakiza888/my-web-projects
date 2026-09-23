@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9edf2;
+    color: #333;
+    line-height: 1.6;
+}
+body {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+body > h1 {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+.resume-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 1000px;
+}
+.left-column {
+    background-color: #17365d;
+    color: white;
+    padding: 25px 20px;
+}
+.profle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profle h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+.profle img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.left-column h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #5da9e9;
+}
+.contact-information {
+    margin-bottom: 30px;
+}
+.contact-information p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+.skills {
+    margin-bottom: 20px;
+}
+.skills ul {
+    padding-left: 18px;
+}
+.skills li {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+.right-column {
+    padding: 35px 40px;
+    background-color: #ffffff;
+}
+.right-column section {
+    margin-bottom: 30px;
+}
+.right-column h2 {
+    color: #17365d;
+    font-size: 23px;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #5da9e9;
+}
+.right-column p {
+    font-size: 14px;
+    color: #555;
+}
+.right-column ul {
+    padding-left: 20px;
+}
+.right-column li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+.right-column li:hover {
+    color: #17365d;
+}
+.right-column section {
+    padding: 18px;
+    border-left: 4px solid #5da9e9;
+    background-color: #f8fafc;
+    transition: 0.3s;
+}
+.right-column section:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 800px) {
+    body {
+        width: 95%;
+    }
+    .resume-container {
+        grid-template-columns: 220px 1fr;
+    }
+    .right-column {
+        padding: 25px;
+    }
+    .left-column {
+        padding: 20px 15px;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        margin: 0;
+    }
+    .resume-container {
+        display: block;
+    }
+    .left-column {
+        text-align: center;
+    }
+    .contact-information,
+    .skills {
+        text-align: left;
+    }
+    .right-column {
+        padding: 20px;
+    }
+    body > h1 {
+        font-size: 26px;
+    }
+    .right-column section {
+        padding: 15px;
+    }
+}
