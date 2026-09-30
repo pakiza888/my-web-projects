@@ -1,0 +1,52 @@
+*{
+    font-family:  sans-serif;
+}
+.profile {
+border-radius: 5%;
+background-color: brown;
+width: 300px;
+padding: 20px;
+border: 1px solid black;
+box-shadow: 0px 5px 1px lightgrey;
+text-align: center;
+position:relative;
+margin: 50px auto;
+}
+.skills{
+    display: flex;
+}
+.skills span {
+    background-color: lightsalmon;
+    padding: 8px 12px;
+    border-radius: 2px;
+}
+.profile h1{
+    text-align: center;
+}
+.badge{
+    position: absolute;
+    background-color: yellow;
+    padding:2px;
+    colour:white;
+    top: 10px;
+    right: 10px;
+}
+.contact{
+    position:fixed;
+    background-color: green;
+    colour:white;
+    bottom: 10px;
+    right: 10px;
+}
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .profile-card {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 30px 0;
+    }
+}
