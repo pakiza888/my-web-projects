@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+header {
+    background-color: peru;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background-color:burlywood;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.admission {
+    padding: 30px;
+    text-align: center;
+}
+.moving-text {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+.card {
+    width: 300px;
+    height: 220px;
+    padding: 25px;
+    margin: 10px;
+    border: 2px solid black;
+    position: relative;
+    background-color: chocolate;
+}
+.apply-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color:plum;
+    color: white;
+    padding: 5px 10px;
+}
+ .apply-badge:hover {
+    background-color: purple;
+    cursor: pointer;
+}
+.apply-now {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: cadetblue;
+}
+.apply-now:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
