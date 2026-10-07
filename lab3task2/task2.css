@@ -69,19 +69,15 @@ nav a {
     background-color: green;
     cursor: pointer;
 }
-
 @media screen and (max-width: 1024px) {
-
     .cards {
         flex-direction: column;
         align-items: center;
     }
-
     .card {
         width: 90%;
         margin: 15px 0;
     }
-
     nav {
         flex-direction: column;
         align-items: center;
